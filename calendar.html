@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/default.css"/>
+		<title>Skuarch personal site</title>
+		<script src="scripts/AC_RunActiveContent.js" type="text/javascript"></script>
+		<script src="scripts/checkForm.js" type="text/javascript"></script>
+		<script src="scripts/verifyEmail.js" type="text/javascript"></script>
+		<script src="scripts/newAjax.js" type="text/javascript"></script>
+		<script src="scripts/ajaxSendMail.js" type="text/javascript"></script>
+	</head>
+	
+	<body>
+    	
+		<div class="navigator"><!-- div navigator -->
+
+			<a href="index.html"><img src="images/home.png" alt="home"/></a>
+			<a href="calendar.html"><img src="images/calendar.png" alt="calendar"/></a>
+			<a href="jobs.html"><img src="images/jobs.png" alt="jobs"/></a>
+			<a href="contact.html"><img src="images/contact.png" alt="contact"/></a>
+			<a href="http://skuarch.blogspot.com"><img src="images/blog.png" alt="blog"/></a>
+			<a href="http://www.whohub.com/skuarch"><img src="images/interview.png" alt="interview"/></a>
+			<a href="http://twitter.com/#!/skuarchDevelop"><img src="images/twitter.png" alt="twitter"/></a>
+			<a href="http://es-la.facebook.com/people/Alfredo-Bello-Monzoy/100000648344702">
+			<a href="#"><img src="images/facebook.png" alt="facebook"/></a>
+			
+		</div><!-- end div navigator -->
+
+			
+		<div class="animation"><!-- div title -->
+        
+			<script type="text/javascript">
+				AC_FL_RunContent( 'codebase',
+						'http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0',
+						'width',
+						'900',
+						'height',
+						'300',
+						'src',
+						'src/animation',
+						'quality',
+						'high',
+						'pluginspage',
+						'http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash',
+						'wmode',
+						'transparent',
+						'movie',
+						'src/animation' 
+				); //end AC code				
+			</script>
+			<noscript>
+            		<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" 
+				codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0" 
+				width="900" 
+				height="300">
+			<param name="movie" value="src/animation.swf">
+			<param name="quality" value="high">
+			<param name="wmode" value="transparent">
+        		<embed src="src/animation.swf" 
+				width="900" 
+				height="300" 
+				quality="high" 
+				pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" 
+				type="application/x-shockwave-flash" 
+				wmode="transparent">
+	                </embed>
+		      	</object>
+			</noscript>
+		</div><!-- end div title -->		
+
+		<div class="wraper"><!-- wraper -->
+
+			<div class="headerCalendar">
+				<h3>Calendar</h3>
+			</div>			
+
+			<div class="containerCalendar"><!--container -->
+	
+				<iframe 
+					src="https://www.google.com/calendar/embed?src=skuarch%40gmail.com&ctz=America/Mexico_City" 
+					style="border: 0" 
+					width="860" 
+					height="380" 
+					frameborder="0" 
+					scrolling="no">
+				</iframe>						
+				
+			</div><!-- end container -->	
+
+		</div><!-- end wraper -->
+
+		<div class="cleaner"></div>
+				
+		<div class="footer"><!-- div footer -->
+		
+			<br>
+			
+			<center>
+				For more communication you can use the follow form
+			</center>			
+			
+			<br>
+			
+			<form action="scripts/sendMail.php" method="post" name="contact">
+			
+				<table align="center" border="0">
+					<tr>
+						<td>email</td>
+						<td><input name="email" type="text" id="email"></td>
+					</tr>
+					
+					<tr>
+						<td>name</td>
+						<td><input name="name" type="text" id="name"></td>
+					</tr>
+					
+					<tr>
+						<td>comments</td>
+						<td><input name="comments" type="textarea" id="comments"></td>
+					</tr>
+					
+					<tr>
+						<td><input type="reset" value="reset"></td>
+						<td><input type="button" value="send message" onClick="checkForm(document.contact)"></td>
+					</tr>
+					
+				</table>			
+			
+			</form>
+			
+		</div><!-- end div footer -->
+		
+		<div class="copyright"><!--copyright-->
+			Todos los derechos reservados de autor skuarch Alfredo Bello Monzoy            
+		</div><!--end copyright-->
+	
+	</body>
+
+</html>
+
